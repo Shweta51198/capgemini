@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<beansxmlns="http://www.springframework.org/schema/beans"
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<beanid="address1"class="com.cg.model.Address">
+
+<propertyname="street"value="Adaspur"></property>
+
+<propertyname="city"value="cuttack"></property>
+
+<propertyname="country"value="India"></property>
+
+<propertyname="state"value="Odisha"></property>
+
+<propertyname="zip"value="53432"></property>
+
+</bean>
+
+<beanid="customer1"class="com.cg.model.Customer">
+
+<propertyname="customerName"value="Bibhuti Bhusan Sahoo"></property>
+
+<propertyname="customerId"value="25"></property>
+
+<propertyname="customerContact"value="892932"></property>
+
+<propertyname="customerAddress"ref="address1"></property>
+
+</bean>
+  
+  <beanid="address2"class="com.cg.model.Address">
+
+<propertyname="street"value="Kubar Shai"></property>
+
+<propertyname="city"value="Bhubanswar"></property>
+
+<propertyname="country"value="India"></property>
+
+<propertyname="state"value="Odisha"></property>
+
+<propertyname="zip"value="751024"></property>
+
+</bean>
+
+<beanid="customer2"class="com.cg.model.Customer">
+
+<propertyname="customerName"value="Bhusan Sahoo"></property>
+
+<propertyname="customerId"value="24"></property>
+
+<propertyname="customerContact"value="3232"></property>
+
+<propertyname="customerAddress"ref="address2"></property>
+
+</bean>
+
+</beans>
